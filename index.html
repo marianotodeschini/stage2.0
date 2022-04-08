@@ -29,11 +29,11 @@
 
         <div class="nav-menu">
             <ul>
-                <li> <a href="#cuerpo"> Inicio</a></li>
-                <li> <a href="#clasesyhorarios"> Clases y Horarios </a></li>
-                <li> <a href="#staff"> Staff</a></li>
-                <li> <a href="#formulario"> Inscripcion</a></li>
-                <li> <a href="#contacto"> Contacto </a></li>
+                <li> <a href="#cuerpo"> ★ Inicio</a></li>
+                <li> <a href="#clasesyhorarios"> ★ Horarios </a></li>
+                <li> <a href="#staff"> ★ Staff</a></li>
+                <li> <a href="#formulario"> ★ Inscripción</a></li>
+                <li> <a href="#contacto"> ★ Contácto </a></li>
             </ul>
         </div>
 
@@ -42,17 +42,44 @@
 
 
     <div class="cuerpo" id="cuerpo">
+
+
+<div class="bannerprincipal">
+ <h1 class="botonbienvenida"> ★ Bienvenido</h1>
+    <a href="#login" class="botonlogg"> iniciá sección</a>
+</div>
+
+
+<div class="login" id="login">
+<h1 class="logostar">★</h1>
+<h2 class="titulologin">Inicia sección</h2>
+<form>
+<label for="username">Email</label>
+<input class="logininput" type="text" placeholder="Ingrese su email">
+<label class="loginlabel"  for="password">Password</label>
+<input class="logininput"  type="password" placeholder="Clave">
+<input class="logininput" type="submit" value="login">
+<a href="#">Olvidaste la contraseña?</a> <br>
+<a href="#">No estás registrado? Crea una cuenta</a>
+
+
+</form>
+</div>
+
+
+
         <div class="inicio" id="inicio">
             <div class="textobienvenida">
         <h2>  ★ Bienvenido a Stage, Academia de Danzas y Acrobacias</h2>
+      
+        <img src="localfrente.jpg" class="frentelocal">  
         <hr>
-        
         <p class="textoacademia"> Somos una academia de danzas, acrobacias y comedia Musical
             de la ciudad de San Lorenzo, Provincia de Santa Fe, Argentina.
             Desde hace 15 años y con mas de 500 trofeos y titulos <br> ganados, 
             dirige esta academia Maira Barrionuevo.
         </p></div>
-        <img src="localfrente.jpg" class="frentelocal">
+        
        
         </div>
 
@@ -67,8 +94,7 @@
         <img class="horariosficha" id="horariosficha" src="horariomañana.jpg">
         <h3> ☆ Horarios turno Tarde:</h3>
         <img class="horariosficha" id="horariotarde" src="horariotarde.jpg">
-        
-        <div class="divisor">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ </div>
+
         </div>
         <div class="staff" id="staff">
             <h2> ★ Staff </h2>
@@ -106,9 +132,7 @@
    <p> Profe de Clasico, con mas de 10 años de experiencia dando en el Colon y participación en grupos de competencia.</p>
     </div>
         </div>
-        <div class="divisor">★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ </div>
-        
-        </div>
+    </div>
 
 <div class="formulario" id="formulario">
 <form class="inscripcion">
@@ -116,7 +140,7 @@
     <hr>
     <div class="datos-personales">
 
-    <label class="datosinput" id="nombreyapellido"> Nombre y Apellido
+    <label class="datosinput" id="nombreyapellido">     
     <input type="text" placeholder="Nombre y Apellido" id="inputdato" class="inputdato">
     </label>
     <label class="datosinput"  id="fechanacimiento"> Fecha de nacimiento
@@ -124,13 +148,17 @@
     </label>
     
 
-    <label class="datosinput"  id="dni"> N° Documento
+    <label class="datosinput"  id="dni">
     <input type="number" placeholder="DNI" class="inputdato" id="inputdato">
     </label>
-     <label class="inputdato" id="telefono"> Telefono / Cel
+
+
+     <label class="inputdato" id="telefono">
         <input type="number" placeholder="N° de telefono" id="inputdato" class="inputdato">
         </label>
 </div>
+
+
     <div class="clasescheck">
         <label id="categoria" class="categoria" name="categoria"> Categoria 
     <select id="categoria" class="categoria"> 
@@ -141,66 +169,35 @@
     </select></label>
     </div>
 
-<div class="contenedoractividades">
-    <div class="actividades1">
 
- <label>
-<input type="checkbox" name="reggaeton" id="reggaeton"> 
-☆ Reggaeton
-</label>
-
-<label> 
-    <input type="checkbox" name="freedance" id="freedance"> 
-    ☆ Free Dance</label>
-
-    <label> 
-        <input type="checkbox" name="acroentelas" id="acroentelas">☆ Acrobacias</label>
-        <label> 
-            <input type="checkbox" name="poledance" id="poledance"> 
-            ☆ Pole Dance </label>
-
-            <label>
-                <input type="checkbox" name="clasico" id="clasico"> 
-               ☆  Danza Clásica </label>
-</div>
-<div class="actividades2">
-                <label> 
-                    <input type="checkbox" name="urbanos" id="urbanos"> 
-                    ☆ Ritmos Urbanos   </label>
-                    <label> 
-                        <input type="checkbox" name="   " id="reggaeton"> 
-                        ☆ Ritmos Urbanos</label>
-                        <label> 
-                            <input type="checkbox" name="reggaeton" id="reggaeton"> 
-                            ☆ Ritmos Urbanos </label>
-                            <label>
-                                <input type="checkbox" name="reggaeton" id="reggaeton"> 
-                                ☆ Ritmos Urbanos </label>
-                                <label> 
-                                    <input type="checkbox" name="reggaeton" id="reggaeton"> 
-                                    ☆ Ritmos Urbanos</label>    
+    <div class="clasescheck">
+        <label id="categoria" class="categoria" name="categoria"> Clases
+    <select id="categoria" class="categoria"> 
+        <option>Reggaeton</option>
+        <option>Freedance</option>
+        <option>Clásico</option>
+        <option>Ritmos Urbanos</option>
+    </select></label>
    </div>  
-</div>     <input type="submit" class="botonenvio" id="botonenvio"> Inscribirme</input>
-  </div>          
-  
+   <input type="submit" class="botonenvio" id="botonenvio"> </input>
+
 </div>
 
-<div class="contacto">
+<div class="contacto" id="contacto">
 
-<div class="datos">
-    <h2> Realizá tu consulta!</h2>
+<form class="datos">
+    <h2> CONTACTANOS!</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+
     <input type="text" class="nombre" id="nombre" placeholder="nombre">
     <input type="email" placeholder="Ingrese su email">
     <textarea class="textarea" id="consulta" placeholder="Escriba su consulta...."></textarea>
-    <input type="submit" class="envioconsulta" id="envioconsulta"> Enviar </input>
-</div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
-
-
+    <input type="submit" class="envioconsulta" id="envioconsulta"></input>
 </div>
 
-  </form>  
-
+ </form>  
 </div>
 
+<footer> Creado por Mariano Todeschini 2022 </footer>
+ 
         </body>

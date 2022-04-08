@@ -16,17 +16,20 @@ body{
 .nav{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,104,1) 35%, rgba(0,212,255,1) 100%);
-    height: 180px;
+    height: 80px;
     color: white;
     opacity: 90%;
     display: flex;
 width: 100%;
 margin: 0 auto;
+margin-top: 2%;
 align-items: center;
-flex-direction: row;
+flex-direction: column;
 position: fixed;
 z-index: 1;
+
 }
+
 li{
     display: inline-block;
     margin-left:10%;
@@ -35,22 +38,9 @@ li{
     
 }
 
-.menu {
-    position: fixed;
-    top: 6%;
-    right: 5%
-}
 
- li:hover{
-    
-    color:white;
-    transform: scale(1.1);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    border-radius: 190px;
-    border: solid;
-    width: 120px;
-    border-color: purple;
-   
+ li a:hover{
+     color:purple;
 }
 
 a{
@@ -61,11 +51,10 @@ a{
 
 .nav-container{
 display: flex;
-height: 400px;
-width: 90%;
+height: 150px;
+width: 100%;
 margin: 0 auto;
-justify-content: center;
-flex-direction: column;
+flex-direction: row;
 position: fixed;
 
 }
@@ -73,13 +62,32 @@ svg{
     width: 30px;
 }
 
+.nav-menu{
+background: black;
+display: flex;
+flex-direction: row;
+}
+
+
 .nav-input:checked + .nav-menu{
     clip-path: circle(100% at center)
 }
 
 .nav-logo{
-    font-size: 3em;
-    font-weight: 900;
+    margin: 0;
+   font-size: 400%;
+    font-weight: 100%;
+    margin-top:-1%;
+    position: absolute;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 200px;
+
+
 }
 
 .nav-label, .nav-input{
@@ -87,9 +95,12 @@ svg{
 }
 
 .nav-menu{
-    display:grid;
-    grid-auto-flow: column;
+    display:flex;
+    position: absolute;
+    flex-direction: row;
     gap: 3em;
+    top: 0%;
+    left: 100%;
 
 }
 
@@ -110,12 +121,9 @@ svg{
     clip-path: var(--clippy);
     transition: clip-path .5s;
 }
+/*________________RESPONSIVE__________________________________________*/
 
-.nav-item:hover{
-    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-@media (max-width: 700px){
+@media (max-width: 757px){
     .nav-label{
         display:block;
         cursor:pointer; 
@@ -125,16 +133,22 @@ svg{
     height: 100px;
 }
 .nav-logo{
-    padding-top: 30px;
+    padding-top: 6px;
 }
 
+.menu{
+    display: flex;
+    position: fixed;
+    top:6%;
+    right:10px;
+}
     .nav-menu{
         position: fixed;
-        top: 100px;
+        top: 17%;
+        left: 0%;
         bottom: 0px;
-        background: purple;
-        width: 20%;
-        left:0;
+        background: rgba(128, 0, 128, 0.479);
+        width: 25%;
         display: flex;
         flex-direction: column;
         align-content: left;
@@ -147,19 +161,16 @@ svg{
     }
     li a{
         display: flex;
-        justify-content: center;
-        padding: 1px;
         border-style: solid 1px;
-        border-radius: 10px 5px 5px 10px;
-        border-color: rgba(247, 19, 255, 0.387);
+   flex-direction: column;
         width: 100%;
-        background: rgb(131,58,180);
-        background: linear-gradient(90deg, rgb(117, 1, 1) 0%, rgb(187, 0, 255) 50%, rgb(0, 0, 0) 100%);
-        box-shadow: 2px 16px 30px 0px rgba(0,0,0,0.94);
-        -webkit-box-shadow: 2px 16px 30px 0px rgba(0,0,0,0.94);
-        -moz-box-shadow: 2px 16px 30px 0px rgba(0,0,0,0.94);
-    }
+       }
+    ul{
+        display: flex;
+left: 10px;
+        flex-direction: column;
 
+    }
         .nav-logo{
         display: flex;
         padding-left: 0px;
@@ -169,21 +180,25 @@ svg{
         padding-left: 18%;
     }
   #inicio{
-      width: 90%;
+      width: 98%;
+      margin-right: 20%;
+      
   }
 
   #clasesyhorarios{
-      width: 90%;
+      width: 98%;
+      margin-right: 20%;
   }
   #horariosficha, #horariotarde{
       width: 120%;
       border-radius: 30px;
-      margin-right: 0%;
+   
   }
 
   #staff, #formulario{
-    width: 90%;
+    width: 98%;
     height: 70%;
+    margin-right: 20%;
   }
   
   #inputdato{
@@ -194,8 +209,15 @@ height: 30%;
       width: 60%;
     margin-bottom: 60%;
   }
+#contacto{
+    width: 98%;
+    margin-right: 20%;
 }
 
+}
+
+
+/*______________________________________________*/
 .cuerpo{
 display: flex;
 flex-direction: column;
@@ -205,6 +227,133 @@ padding-bottom: 60px;
 background-image: url(https://img.freepik.com/vector-gratis/filas-cine-rojo-o-asientos-teatro-aislados-sobre-fondo-negro_270215-386.jpg);
 
 }
+.bannerprincipal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bannerprincipal h1{
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+    right: 90px;
+    font-size: 200%;
+    
+  background: #ff0000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff0000, #29f1ff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff0000, #29f1ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bannerprincipal a{
+    border:none;
+    outline: none;
+    height:30px;
+    width: 200px;
+    background: #b3007a9d;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 5px;
+
+}
+
+
+.login{
+    width: 320px;
+    height: 420px;
+    background: 000s;
+    color: #fff;
+    top:50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50px, -50pxs);
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding: 40px;
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    border-top:1px solid rgba(220, 11, 216, 0.5);
+    border-left:1px solid rgba(18, 176, 255, 0.5);
+    border-radius:15px;
+    margin-top: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+    ;
+}
+
+ .logostar{
+   font-size: 150px;
+   position: absolute;
+    border-radius: 50%;
+    display: flex;
+    top:-100px;
+    left:calc(50% - 50px);
+    
+  background: #ff0000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff0000, #9932cc); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff0000, #9932cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+}
+.logininput{
+    width: 90%;
+    margin-bottom: 20px;
+}
+.titulologin{
+    margin:0;
+    padding: 0 0 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.login input[type="text"],
+.login input[type="password"]{
+    border:none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    color:#fff;
+    font-size: 16px;
+    border-radius: 0px;
+
+}
+
+.login input[type="submit"]{
+    border:none;
+    outline: none;
+    height:40px;
+    background: #b3007a;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.login a:hover{
+   color:white;
+}
+/*INICIO*/
 
 .inicio{
    margin-top: 30%;
@@ -251,8 +400,8 @@ background-image: url(https://img.freepik.com/vector-gratis/filas-cine-rojo-o-as
 }
 
 .frentelocal{
-    width: 40%;
-    border-radius: 190px;
+    width: 100%;
+    border-radius: 30%;
     padding: 30px;
 }
 
@@ -342,7 +491,7 @@ padding: 5%;
     border-color: blueviolet;
     border-radius: 30px;
     width: 60%;
-    height: 800px;
+    height: 500px;
     margin-top: 150px;
     backdrop-filter:blur(5px);
     -webkit-backdrop-filter:blur(5px);
@@ -385,28 +534,29 @@ padding: 5%;
 }
 
 .inscripcion h3{
-    background: #b3007a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b3007a, #32bbcd); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b3007a, #32bbcd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #b3007a; 
+    background: -webkit-linear-gradient(to right, #b3007a, #32bbcd); 
+    background: linear-gradient(to right, #b3007a, #32bbcd); 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-size: 2em;
 }
-.inscripcion hr{
-    width: 100%;
-    margin-top:20px;
-    margin-bottom: 20px;
-}
+
 
 .inputdato{
     padding: 2%;
     margin-bottom: 10px;
+    border:none;
+    border-bottom: 1px solid;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    color:#fff;
+    font-size: 16px;
+    border-radius: 0px;
 }
-.clasescheck{
-    display: flex;
-    flex-direction: column;
-}
+
 .profesores p{
     display: flex;
     justify-content: center;
@@ -465,8 +615,73 @@ input{
 .botonenvio{
     color:white;
     width: 30%;
+    height: 40px;
     margin-top: 10%;
     background-color: #b3007a;
     border-radius: 10px;
     font-size: 100%;
+}
+
+/*_______________PAGINA DE CONTACTO_____________________*/
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    border: solid;
+    border-color: blueviolet;
+    border-radius: 30px;
+    width: 60%;
+    height: 500px;
+    margin-top: 150px;
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    border-top:1px solid rgba(220, 11, 216, 0.5);
+    border-left:1px solid rgba(18, 176, 255, 0.5);
+    border-radius:15px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    justify-content: center;
+    align-items: center;
+
+}
+.contacto h2{
+    background: #b3007a; 
+  background: -webkit-linear-gradient(to right, #b3007a, #32bbcd); 
+  background: linear-gradient(to right, #b3007a, #32bbcd); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-top: 15%;
+}
+
+.contacto input{
+    padding: 2%;
+    margin-bottom: 10px;
+    border:none;
+    border-bottom: 1px solid;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    color:#fff;
+    font-size: 16px;
+    border-radius: 0px;
+}
+
+.contacto textarea{
+    width: 70%;
+    height: 40%;
+    background: transparent;
+    color:#fff
+
+}
+
+.contacto svg{
+    width: 60%;
+    
+}
+
+footer{
+    background-color: black;
+    color: #b3007a;
 }
