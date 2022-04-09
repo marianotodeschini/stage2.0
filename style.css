@@ -179,7 +179,9 @@ left: 10px;
     .cuerpo{
         padding-left: 18%;
     }
-
+    #bannerprincipal{
+        margin-top: 70%;
+    }
 #login{
     margin-right: 20%;
 }
@@ -233,12 +235,13 @@ background-image: url(https://img.freepik.com/vector-gratis/filas-cine-rojo-o-as
 }
 .bannerprincipal{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: -20%;
+    margin-top: 20%;
+    padding-bottom: 20%;
 }
 
 .bannerprincipal h1{
@@ -361,6 +364,7 @@ background-image: url(https://img.freepik.com/vector-gratis/filas-cine-rojo-o-as
 /*INICIO*/
 
 .inicio{
+    padding: 5%;
    margin-top: 30%;
    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
    background: rgba(255,255,255,0.1);
@@ -369,7 +373,7 @@ background-image: url(https://img.freepik.com/vector-gratis/filas-cine-rojo-o-as
    height: 80%;
    width: 70%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
    backdrop-filter:blur(5px);
@@ -380,14 +384,13 @@ background-image: url(https://img.freepik.com/vector-gratis/filas-cine-rojo-o-as
 
 }
 .textobienvenida{
-    padding: 20px;
+   margin: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
 
 }
 .textobienvenida h2{
-    
   background: #b3007a; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #b3007a, #32bbcd); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #b3007a, #32bbcd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -405,7 +408,7 @@ background-image: url(https://img.freepik.com/vector-gratis/filas-cine-rojo-o-as
 }
 
 .frentelocal{
-    width: 100%;
+    width: 60%;
     border-radius: 30%;
     padding: 30px;
 }
